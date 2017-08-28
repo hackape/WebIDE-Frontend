@@ -15,12 +15,12 @@ class Step1 extends Component {
     return (
       <div>
         <h1>
-          Plug-in Project
+          插件项目
         </h1>
         <hr />
         <div className="form-horizontal">
           <div className="form-group">
-            <label className="col-sm-3 control-label">Project name</label>
+            <label className="col-sm-3 control-label">项目名称</label>
             <div className="col-sm-9">
               <input type="text"
                 className="form-control"
@@ -35,7 +35,7 @@ class Step1 extends Component {
             </div>
           </div>
           <div className="form-group">
-            <label htmlFor="inputStashName" className="col-sm-3 control-label">Project Settings</label>
+            <label htmlFor="inputStashName" className="col-sm-3 control-label">项目设置</label>
             <div className="col-sm-9">
               <input type="text"
                 className="form-control"
@@ -50,7 +50,7 @@ class Step1 extends Component {
             </div>
           </div>
           <div className="form-group">
-            <label htmlFor="inputStashName" className="col-sm-3 control-label">Eclipse version</label>
+            <label htmlFor="inputStashName" className="col-sm-3 control-label">Eclipse 版本</label>
             <div className="col-sm-9 checkbox-inline">
               {wizard.platform.eclipseVersion}
             </div>

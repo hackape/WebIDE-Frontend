@@ -12,7 +12,7 @@ const state = observable({
       outputFolder: '',
     },
     platform: {
-      eclipseVersion: '3.5 or greater'
+      eclipseVersion: '3.5 或以上'
     },
     properties: {
       id: '',

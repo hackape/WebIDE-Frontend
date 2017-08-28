@@ -22,10 +22,10 @@ class Step1 extends Component {
     return (
       <div>
         <h1>
-          Select a wizard
+          创建向导
         </h1>
         <hr />
-        <p>Create a plug-in project</p>
+        <p>新建一个插件项目</p>
 
         <div className="form-horizontal">
           <div className="form-group">

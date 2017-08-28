@@ -15,12 +15,12 @@ class Step2 extends Component {
     return (
       <div>
         <h1>
-          Plug-in Project
+          插件项目
         </h1>
         <hr />
-        <p>Enter the Data required to generate the plug-in.</p>
+        <p>请输入项目信息</p>
         <hr />
-        <h2>Properties:</h2>
+        <h2>属性:</h2>
         <div className="form-horizontal">
           <div className="form-group">
             <label className="col-sm-3 control-label">ID</label>
@@ -38,7 +38,7 @@ class Step2 extends Component {
             </div>
           </div>
           <div className="form-group">
-            <label htmlFor="inputStashName" className="col-sm-3 control-label">Version</label>
+            <label htmlFor="inputStashName" className="col-sm-3 control-label">版本</label>
             <div className="col-sm-9">
               <input type="text"
                 className="form-control"
@@ -53,7 +53,7 @@ class Step2 extends Component {
             </div>
           </div>
           <div className="form-group">
-            <label htmlFor="inputStashName" className="col-sm-3 control-label">Name</label>
+            <label htmlFor="inputStashName" className="col-sm-3 control-label">名字</label>
             <div className="col-sm-9">
               <input type="text"
                 className="form-control"
@@ -68,7 +68,7 @@ class Step2 extends Component {
             </div>
           </div>
           <div className="form-group">
-            <label htmlFor="inputStashName" className="col-sm-3 control-label">Vendor</label>
+            <label htmlFor="inputStashName" className="col-sm-3 control-label">第三方库</label>
             <div className="col-sm-9">
               <input type="text"
                 className="form-control"
@@ -83,13 +83,13 @@ class Step2 extends Component {
             </div>
           </div>
           <div className="form-group">
-            <label htmlFor="inputStashName" className="col-sm-3 control-label">Environment</label>
+            <label htmlFor="inputStashName" className="col-sm-3 control-label">环境</label>
             <div className="col-sm-9 checkbox-inline">
               {wizard.properties.environment}
             </div>
           </div>
           <hr />
-          <h2>Options:</h2>
+          <h2>选项:</h2>
           <div className="form-group">
             <div className="col-sm-11  checkbox-inline">
               <label>
@@ -99,7 +99,7 @@ class Step2 extends Component {
                   }}
                   checked={wizard.properties.genActivator}
                 />
-                Generate an activator, a Java class that controls the plug-in's life cycle
+                生成 Activator, 一个用来控制插件生命周期的 Java 类
               </label>
             </div>
           </div>
@@ -129,7 +129,7 @@ class Step2 extends Component {
                   }}
                   checked={wizard.properties.makeContributions}
                 />
-                this plug-in will make contributions to the UI
+                该插件会修改 UI
               </label>
             </div>
           </div>

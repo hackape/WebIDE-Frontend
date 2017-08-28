@@ -67,10 +67,10 @@ class PluginProjectView extends Component {
         {this.renderStep(step)}
         <hr />
         <div className='modal-ops'>
-          <button className='btn btn-default' onClick={e => this.dismissModal()}>Cancel</button>
-          <button className='btn btn-default' disabled={step === 1} onClick={e => this.back()}>Back</button>
-          <button className='btn btn-default' disabled={step === maxStep} onClick={e => this.next()}>Next</button>
-          <button className='btn btn-primary' disabled={!name} onClick={e => this.finish()}>Finish</button>
+          <button className='btn btn-default' onClick={e => this.dismissModal()}>取消</button>
+          <button className='btn btn-default' disabled={step === 1} onClick={e => this.back()}>上一步</button>
+          <button className='btn btn-default' disabled={step === maxStep} onClick={e => this.next()}>下一步</button>
+          <button className='btn btn-primary' disabled={!name} onClick={e => this.finish()}>完成</button>
         </div>
       </div>
     )

@@ -29,7 +29,7 @@ class Step4 extends Component {
     return (
       <div>
         <h1>
-          Select Software Development Kit
+          选择开发组件
         </h1>
         <hr />
         <div className='form-horizontal'>
