@@ -49,11 +49,11 @@ class PluginProjectView extends Component {
     switch (step) {
       case 1:
         return <Step1 />
+      // case 2:
+        // return <Step2 />
       case 2:
-        return <Step2 />
-      case 3:
         return <Step3 />
-      case 4:
+      case 3:
         return <Step4 />
       default:
         return <div></div>

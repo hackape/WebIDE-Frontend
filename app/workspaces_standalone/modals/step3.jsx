@@ -58,9 +58,9 @@ class Step2 extends Component {
               <input type="text"
                 className="form-control"
                 id="inputStashName"
-                value={wizard.properties.name}
+                value={wizard.name}
                 onChange={e => {
-                  wizard.properties.name = e.target.value
+                  wizard.name = e.target.value
                   e.preventDefault()
                   e.stopPropagation()
                 }}

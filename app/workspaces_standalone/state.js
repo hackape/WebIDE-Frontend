@@ -4,7 +4,7 @@ const state = observable({
   wizard: {
     showModal: false,
     step: 1,
-    maxStep: 4,
+    maxStep: 3,
     wizardId: 1,
     name: '',
     settings: {
