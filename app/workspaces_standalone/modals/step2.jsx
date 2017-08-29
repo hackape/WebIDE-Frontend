@@ -34,7 +34,7 @@ class Step1 extends Component {
               />
             </div>
           </div>
-          <div className="form-group">
+          {/* <div className="form-group">
             <label htmlFor="inputStashName" className="col-sm-3 control-label">项目设置</label>
             <div className="col-sm-9">
               <input type="text"
@@ -48,7 +48,7 @@ class Step1 extends Component {
                 }}
               />
             </div>
-          </div>
+          </div> */}
           <div className="form-group">
             <label htmlFor="inputStashName" className="col-sm-3 control-label">Eclipse 版本</label>
             <div className="col-sm-9 checkbox-inline">

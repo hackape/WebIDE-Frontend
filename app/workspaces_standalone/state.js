@@ -45,6 +45,18 @@ const state = observable({
         name: '微内核',
         selected: false,
       },
+      {
+        name: '数据建模',
+        selected: false,
+      },
+      {
+        name: '渲染引擎',
+        selected: false,
+      },
+      {
+        name: '资源搜索引擎',
+        selected: false,
+      },
     ],
     templates: {
       list: [

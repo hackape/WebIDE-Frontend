@@ -68,7 +68,7 @@ class Step2 extends Component {
             </div>
           </div>
           <div className="form-group">
-            <label htmlFor="inputStashName" className="col-sm-3 control-label">第三方库</label>
+            <label htmlFor="inputStashName" className="col-sm-3 control-label">提供者</label>
             <div className="col-sm-9">
               <input type="text"
                 className="form-control"
