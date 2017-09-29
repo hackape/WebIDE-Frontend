@@ -62,12 +62,14 @@ return {
       excludeChunks: ['workspaces'],
       filename: (staticDir ? '../' : '') + mainEntryHtmlName,
       template: path.join(PROJECT_ROOT, 'app/index.html'),
+      favicon: path.join(PROJECT_ROOT, 'static/logo.png'),
     }),
     new HtmlWebpackPlugin({
       title: 'WebIDE',
       excludeChunks: ['main'],
       filename: (staticDir ? '../' : '') + workspacesEntryHtmlName,
       template: path.join(PROJECT_ROOT, 'app/workspaces_standalone/index.html'),
+      favicon: path.join(PROJECT_ROOT, 'static/logo.png'),
     }),
     // https://github.com/kevlened/copy-webpack-plugin
     new CopyWebpackPlugin([{
