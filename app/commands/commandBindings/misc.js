@@ -1,7 +1,7 @@
 import * as Modal from 'components/Modal/actions'
 import * as Panel from 'components/Panel/actions'
 import * as SideBar from 'components/Panel/SideBar/actions'
-
+import * as FileTree from 'components/FileTree//actions'
 
 const getComponentByName = name => window.refs[name].getWrappedInstance()
 export default {
@@ -35,5 +35,8 @@ export default {
   'tools:terminal:new_terminal': (c) => {
     SideBar.activateSidePanelView('bottom_0')
     // $d(Tab.createTabInGroup('tab_group_terminal'))
+  },
+  'help:docs:open_docs': (c) => {
+    FileTree.openHelp()
   }
 }

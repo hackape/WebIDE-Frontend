@@ -8,6 +8,8 @@ export default function getTabType (node) {
     return 'TEXT'
   } else if (/^image\/[^/]+/.test(node.contentType)) {
     return 'IMAGE'
+  } else if (node.contentType === 'help') {
+    return 'HELP'
   }
   // Unknown
   return 'UNKNOWN'

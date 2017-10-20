@@ -156,6 +156,17 @@ const menuBarItems = [
         ]
       }
     ]
+  }, {
+    key: 'help',
+    name: i18n`menuBarItems.help.main`,
+    items: [
+      {
+        key: 'doc',
+        name: i18n`menuBarItems.help.docs`,
+        icon: 'fa fa-book',
+        command: 'help:docs:open_docs',
+      }
+    ],
   }
 ]
 

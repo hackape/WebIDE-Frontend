@@ -51,6 +51,29 @@ class MarkdownEditor extends Component {
   render () {
     const { leftGrow, rightGrow, showBigSize, showPreview } = state
     const { tab, content } = this.props
+    if (tab.tabType === 'help') {
+      return (
+        <div
+          name="markdown_editor_container"
+          style={{
+              display:'flex',
+              width: '100%',
+              height: '100%'
+          }}>
+          <div
+            name="preview"
+            id="editor_preview_preview"
+            style={{
+              flexGrow: rightGrow,
+              flexShrink: 0,
+              flexBasis: 0,
+              backgroundColor: 'white',
+            }}>
+            {PreviewEditor(content)}
+          </div>
+        </div>
+      )
+    }
     return (<div
       name="markdown_editor_container"
       style={{

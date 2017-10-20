@@ -31,5 +31,9 @@
       "terminal": "终端",
       "newTerminal": "新建"
    },
+   "help": {
+      "main": "帮助",
+      "docs": "文档"
+   },
    "switch": "切换到 v1 版本"
 }

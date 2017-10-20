@@ -5,6 +5,7 @@ import ImageEditor from './components/ImageEditor'
 import UnknownEditor from './components/UnknownEditor'
 import WelcomeEditor from './components/WelcomeEditor'
 import { getTabType } from 'utils'
+import helpMD from '../../../static/webide.md'
 
 const editors = {
   CodeEditor,
@@ -24,6 +25,8 @@ const getEditorByName = ({
     return React.createElement(editors.CodeEditor, { editor: tab.editor })
   } else if (type === 'editorWithPreview') {
     return React.createElement(editors.MarkdownEditor, { content, tab })
+  } else if (type === 'editorOnlyPreview') {
+    return React.createElement(editors.MarkdownEditor, { content, tab })
   } else if (type === 'imageEditor') {
     return React.createElement(editors.ImageEditor, { path })  // @fixme: path is wrapped in tab.editor in the new api
   }
@@ -39,7 +42,7 @@ const typeDetect = (title, types) => {
 
 const EditorWrapper = ({ tab }, { i18n }) => {
   const title = tab.title
-  const { path = '', content = '' } = tab
+  let { path = '', content = '' } = tab
   let type = 'default'
   if (tab.contentType) {
     if (getTabType(tab) === 'IMAGE') {
@@ -47,6 +50,10 @@ const EditorWrapper = ({ tab }, { i18n }) => {
     } else if (getTabType(tab) === 'UNKNOWN') {
       type = 'unknownEditor'
     }
+  }
+  if (tab.tabType === 'help') {
+    type = 'editorOnlyPreview'
+    content = helpMD
   }
   if (typeDetect(title, 'md')) {
     type = 'editorWithPreview'

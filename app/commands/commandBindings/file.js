@@ -79,6 +79,15 @@ export default {
       openFile(c.data)
     }
   },
+  'file:open_help': (c) => {
+    TabStore.createTab({
+      title: i18n.get('menuBarItems.help.main'),
+      icon: 'fa fa-file-o',
+      editor: {
+      },
+      tabType: 'help'
+    })
+  },
   'file:new_file': (c) => {
     const node = c.context
     const path = nodeToNearestDirPath(node)

@@ -31,5 +31,9 @@
       "terminal": "Terminal",
       "newTerminal": "New Terminal"
    },
+   "help": {
+      "main": "Help",
+      "docs": "Docs"
+   },
    "switch": "Switch to v1"
 }

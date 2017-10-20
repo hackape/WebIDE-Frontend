@@ -70,6 +70,10 @@ class WorkspaceList extends Component {
     const {openWorkspace, createWorkspace, deleteWorkspace} = actionProps
     return (
       <div className='workspace-list'>
+        <div className='workspace-list-header'>
+          <div className='logo'></div>
+          <div className='title'>插件共享平台后台管理系统</div>
+        </div>
         <div className='create-workspace-container'>
           <div>
             <h3>创建工作空间</h3>
