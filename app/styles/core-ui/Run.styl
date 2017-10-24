@@ -1,0 +1,133 @@
+.run-view {
+    display: flex;
+    height: 100%;
+    overflow-y: auto;
+    .left-tools-bar {
+        width: 25px;
+        border-right: 1px solid;
+        i {
+            display: block;
+            width: 25px;
+            text-align: center;
+            cursor: pointer;
+            line-height: 25px;
+        }
+        .fa-play {
+            color: green;
+        }
+        .fa-stop {
+            color: red;
+        }
+        .disabled {
+            color: #eee;
+            opacity: .8;
+        }
+    }
+    .main-view {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        overflow: hidden;
+
+        .top-tools-bar {
+            height: 25px;
+            border-bottom: 1px solid;
+            padding: 2px;
+            display: flex;
+
+            .icons {
+                padding-right: 10px;
+                i {
+                    width: 20px;
+                    text-align: center;
+                    cursor: pointer;
+                    height 20px;
+                    line-height: 20px;
+                    display: inline-block;
+                    border-radius: 2px;
+                }
+                .fa-check-circle {
+                    color: green;
+                }
+                .checked {
+                    
+                }
+            }
+
+            .infos {
+                display: flex;
+                .progress {
+                    padding-top: 5px;
+                    display: flex;
+                    .p_1 {
+                        border: 1px solid green;
+                        padding: 1px;
+                        width: 200px;
+                        height: 10px;
+                        margin-right: 10px;
+                        .p_2 {
+                            background: green;
+                            height 6px;
+                        }
+                    }
+                    .info-1 {
+                        .label {
+                            opacity: .6;
+                        }
+                    }
+                }
+            }
+        }
+
+        .logs-view {
+            flex: 1;
+            overflow: hidden;
+            display: flex;
+            .logs-view-left {
+                width: 300px;
+                border-right: 1px solid;
+                height: 100%;
+                overflow: auto;
+                .test-list {
+                    padding: 4px;
+                    .test-item {
+                        padding: 2px 0;
+                        display: flex;
+                        cursor: pointer;
+                        i {
+                            margin: 0 4px;
+                            width: 10px;
+                            text-align: center;
+                        }
+                        .fa-check-circle {
+                            color: green;
+                        }
+                        .test-name {
+                            flex: 1;
+                        }
+                        .test-time {
+                            opacity: .8;
+                        }
+                    }
+                }
+                .test-list-container {
+                    padding-left: 32px;
+                }
+            }
+            .logs-view-right {
+                flex: 1;
+                overflow: hidden;
+
+                .logs-list {
+                    font-family: Menlo, Monaco, "DejaVu Sans Mono", Consolas, "Andale Mono", monospace;
+                    overflow: auto;
+                    width: 100%;
+                    height: 100%;
+                    padding: 4px;
+                    scrollBar();
+                }
+            }
+        }
+    }
+}

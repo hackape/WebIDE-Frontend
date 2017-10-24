@@ -8,6 +8,7 @@ import TerminalContainer from '../Terminal'
 import SideBar from './SideBar/SideBar'
 import { SidePanelContainer, SidePanelView } from './SideBar/SidePanel'
 import GitGraph from 'components/Git/GitGraph'
+import Run from 'components/Run'
 
 
 const PanelContent = ({ panel }) => {
@@ -48,6 +49,7 @@ const PanelContent = ({ panel }) => {
         terminal: { text: i18n`panel.bottom.terminal`, icon: 'octicon octicon-terminal', weight: 2 },
         gitGraph: { text: i18n`panel.bottom.gitGraph`, icon: 'octicon octicon-git-commit' },
         gitHistory: { text: i18n`panel.bottom.history`, icon: 'octicon octicon-history' },
+        run: { text: i18n`panel.bottom.run`, icon: 'octicon octicon-triangle-right' },
       }
       return (
         <SidePanelContainer side='bottom'>
@@ -57,6 +59,10 @@ const PanelContent = ({ panel }) => {
 
           <SidePanelView key='gitGraph' label={labels.gitGraph} >
             <GitGraph />
+          </SidePanelView>
+
+          <SidePanelView key='run' label={labels.run} >
+            <Run />
           </SidePanelView>
         </SidePanelContainer>
       )

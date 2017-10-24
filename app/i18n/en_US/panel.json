@@ -2,7 +2,8 @@
    "bottom": {
       "terminal": "Terminal",
       "gitGraph": "Git Logs",
-      "history": "History"
+      "history": "History",
+      "run": "Test"
    },
    "left": {
       "project": "Project"

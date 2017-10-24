@@ -88,7 +88,11 @@ return {
       {
         test: /\.md$/,
         use: ['raw-loader']
-      }
+      },
+      {
+        test: /\.log$/,
+        use: ['raw-loader']
+      },
     ]
   }
 }
