@@ -72,7 +72,7 @@ class WorkspaceList extends Component {
       <div className='workspace-list'>
         <div className='workspace-list-header'>
           <div className='logo'></div>
-          <div className='title'>插件共享平台后台管理系统</div>
+          <div className='title'>插件研试平台</div>
         </div>
         <div className='create-workspace-container'>
           <div>

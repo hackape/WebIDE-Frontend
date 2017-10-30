@@ -95,7 +95,7 @@ class RunView extends Component {
                   <i className={`${rootStyle}`} />
                   <i className='fa fa-check-circle' aria-hidden='true'></i>
                   <div className='test-name'>
-                    ControllorTest (net.coding.ide)
+                    ControllorTest (com.nriet)
                   </div>
                   <div className='test-time'>
                     806ms

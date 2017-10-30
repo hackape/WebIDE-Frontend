@@ -1,6 +1,6 @@
 1.欢迎使用 WebIDE 手册 
 -----
-本手册主要描述 Coding.net 旗下 WebIDE 产品的相关功能说明。
+本手册主要描述 WebIDE 产品的相关功能说明。
 
 
 2.关于WebIDE
@@ -8,7 +8,7 @@
 
 ### 2.1 WebIDE 是什么？ ###
 
-WebIDE 是 Coding.net 研发的一款在线集成开发环境( Integrated Development Environment )。
+WebIDE 是一款在线集成开发环境( Integrated Development Environment )。
 开发者只需要一个浏览器就可以编写代码，并在WebIDE 提供的终端环境中运行你的代码，让你告别 Local 环境，开启云端开发模式。
 
 
@@ -36,14 +36,9 @@ WebIDE 致力于降低开发者编辑代码的门槛，省去了安装配置本�
 
 #### 3.1.1 前提条件：
  -  已经创建好至少一个项目
- -  已创建的 WorkSpace 少于当前账户的配额，具体配额查询项目升级 [项目版本说明][1]
  
 
 ### 3.2 界面说明 ###
-
-WebIDE 界面如下图：
-
- ![WebIDE界面](https://dn-coding-net-production-pp.qbox.me/0213eb7c-31e8-4fed-bf44-b28b38400b31.png) 
 
 1. 顶部菜单栏
 2. 左边是文件树目录
@@ -53,9 +48,7 @@ WebIDE 界面如下图：
  - 注：您也可以拖动 Tab 自定义界面。
 
 ### 3.3  文件管理
-WebIDE 支持文件新建、删除、上传、下载、重命名。 右键点击文件树目录，出现如下菜单：
-
- ![文件](https://dn-coding-net-production-pp.qbox.me/a97d272a-f567-45c6-9205-b808c6747969.png) 
+WebIDE 支持文件新建、删除、上传、下载、重命名。 右键点击文件树目录进行操作。
 
 WebIDE 支持图片和pdf 的双击预览。
 
@@ -79,16 +72,17 @@ WebIDE 支持图片和pdf 的双击预览。
 
  ![图片](https://dn-coding-net-production-pp.qbox.me/656ca53b-83aa-411b-b051-39380965392c.png) 
 
-<a name="faq"/>
 
 #### 3.4.4 Push 提交远端仓库
 
 当你的代码需要提交到远端Git仓库时候，点击菜单栏的“Repository” - > “Push” ，确认本地和远端的分支。
+
  ![图片](https://dn-coding-net-production-pp.qbox.me/6e32e236-d9a4-468e-be9c-c16816f9a02d.png) 
 
 #### 3.4.5 Pull 从远端仓库拉取到本地
 
 当你的远端代码仓库领先于IDE的本地代码仓库时，需要将远端仓库的代码拉取到本地，点击菜单栏的“Repository” - > “Pull” ，会将代码拉取到本地设置的分支。
+
 
  ![图片](https://dn-coding-net-production-pp.qbox.me/c389a9bc-aa96-40eb-b440-a776e6391ed3.png) 
 
@@ -100,10 +94,7 @@ WebIDE 支持图片和pdf 的双击预览。
 
 #### 3.5.2 如何管理环境 ###
 
-点击右边的环境设置“Environment”图标，弹出环境设置tab，如下图所示：
-
-![图片](https://dn-coding-net-production-pp.qbox.me/8b94439d-b591-46f1-9bcc-2b938289cfe6.png) 
- 
+点击右边的环境设置“Environment”图标，弹出环境设置tab
 点击 “ ？”可以查看，环境设置的帮助说明，用户可以将环境保存下来然后分享给其它的项目成员使用。
 
 #### 3.5.3 如何保存环境 ###
@@ -113,7 +104,6 @@ WebIDE 支持图片和pdf 的双击预览。
 
 ![图片](https://dn-coding-net-production-pp.qbox.me/15415d4d-0f86-4555-9333-41b74e328538.png) 
 
-<a name="callback-url"/>
 
 #### 3.5.4 如何切换和分享环境 
 
@@ -171,10 +161,5 @@ WebIDE 支持为编写好的程序创建一个外部可以访问的链接，有�
 
 ![图片](https://dn-coding-net-production-pp.qbox.me/543dfde7-8bf0-49a8-95c8-80c33f18c106.png) 
 
-设置你需要绑定的端口，需要跟程序运行监听的端口一致, 如上面的8080，点击链接访问如下：
-
-![图片](https://dn-coding-net-production-pp.qbox.me/1bca4b34-acbd-423c-a393-4380978bbff8.png) 
+设置你需要绑定的端口，需要跟程序运行监听的端口一致, 如上面的8080，点击链接访问页面。
                                         
-
-
-  [1]: coding.net/upgrade

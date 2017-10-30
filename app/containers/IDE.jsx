@@ -6,7 +6,7 @@ import Utilities from './Utilities'
 
 import api from '../backendAPI'
 import config from '../config'
-
+import dispatchCommand from '../commands/dispatchCommand'
 
 class IDE extends Component {
   constructor (props) {
@@ -17,6 +17,10 @@ class IDE extends Component {
   componentWillMount () {  // initLifecycle_3: IDE specific init
     initializeFileTree() // @fixme: this is related to the quirk in filetree state
     this.setState({ isReady: true })
+  }
+
+  componentDidMount () {
+    dispatchCommand('file:open_help')
   }
 
   render () {
