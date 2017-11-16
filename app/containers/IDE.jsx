@@ -30,6 +30,14 @@ class IDE extends Component {
         <div className='workspace-list-header'>
           <div className='logo'></div>
           <div className='title'>插件研试平台</div>
+          <div className='user'>
+            <div className='userAvator'>
+              <div className='userAvatorImg'></div>
+            </div>
+            <div className='userName'>
+              测试用户
+            </div>
+          </div>
         </div>
         <PanelsContainer />
         <Utilities />
