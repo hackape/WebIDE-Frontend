@@ -27,6 +27,10 @@ class IDE extends Component {
     if (!this.state.isReady) return null
     return (
       <div className='ide-container'>
+        <div className='workspace-list-header'>
+          <div className='logo'></div>
+          <div className='title'>插件研试平台</div>
+        </div>
         <PanelsContainer />
         <Utilities />
       </div>
